@@ -1,8 +1,5 @@
 <project basedir="." default="compile">
- <properties>
-   <sonar.organization>lordtitan001</sonar.organization>
-   <sonar.host.url>https://sonarcloud.io</sonar.host.url>
- </properties>
+    <property name="sonar.java.binaries" value="target"/>
 	<!-- This file contains all of the environment specific configuration, change it for your setup -->
     <property file="local.properties"/>
 	<dirname file="${ant.file}" property="bodgeit.home"/>
